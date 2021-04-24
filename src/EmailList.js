@@ -1,5 +1,7 @@
 import React from "react";
 import Section from "./Section";
+import EmailRow from "./EmailRow";
+
 import "./EmailList.css";
 
 import { Checkbox, IconButton } from "@material-ui/core";
@@ -49,6 +51,20 @@ function EmailList() {
         <Section Icon={InboxIcon} title="Primary" color="red" selected />
         <Section Icon={PeopleIcon} title="Social" color="#1A73EB" />
         <Section Icon={LocalOfferIcon} title="Promotions" color="green" />
+      </div>
+      <div className="emailList__list">
+        <EmailRow
+          title="Hackerrank"
+          subject="Hello Developer"
+          description="Just wanted to check you out"
+          time="10pm"
+        />
+        <EmailRow
+          title="Hackerrank"
+          subject="Hello Developer"
+          description="Just wanted to check you out"
+          time="10pm"
+        />
       </div>
     </div>
   );
